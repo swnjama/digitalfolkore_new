@@ -23,7 +23,22 @@
     font-size: 54px;
     color: hsl(325, 94%, 54%);
     transform: skew(-0.2rad);
+/*     display: inline-block; */
+    animation: snake 3s infinite;
   }
+  
+     @keyframes snake {
+            0%, 20%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateX(-60px);
+            }
+            60% {
+                transform: translateX(60px);
+            }
+        }
+           
 
   h2 {
     text-align: center;
@@ -38,6 +53,16 @@
     color: hsl(281, 100%, 29%);
     margin: 250px;
     transform: translate(150px, -279px)
+  }
+  .pisces1{
+   transform: translate(100px, -785px); 
+   width: 200px;
+   height: 200px 
+  }
+  .secondh2{ 
+   transform: translate(150px, -700px);
+   text-align: center;
+  
   }
 </style>
 <body>
@@ -56,4 +81,8 @@
     which is fun until i have to do anything govt related lol !
     here are some of my likes, dislikes etc and just my own MAGICAL slice of the web.
   </p>
+  <img src="pisces.gif" alt="pisces symbol floating around" class=pisces1>
+<!--   <h2 class="secondh2">
+    the IDES OF MARCH
+  </h2> -->
 </body>
